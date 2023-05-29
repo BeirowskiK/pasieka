@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Pasieka</title>
+    <script async src="main.js"></script>
+    <script async src="menu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="main">
+            <div id="logo">
+                <img src="./bee.png" alt="bee icon">
+                <h1>Słodki miód</h1>
+            </div>
+            <nav>
+                <span id="mobile-menu-icon">&#9776;</span>
+                <ul class="invisible">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="zamowienia.html">Zamówienia</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="order" class="main-content">
+            <header>
+                <h2>Złóż zamówienie</h2>
+            </header>
+            <form>
+                <fieldset>
+                    <legend>Dane osobowe:</legend>
+                    <div class="field">
+                        <label for="imie">Imię:</label>
+                        <input type="text" id="imie">
+                    </div>
+                    <div class="field">
+                        <label for="nazwisko">Nazwisko:</label>
+                        <input type="text" id="nazwisko">
+                    </div>
+                    <div class="field">
+                        <label for="adres">Adres:</label>
+                        <div id="street-box">
+                            <input type="text" id="street" placeholder="ulica">
+                        </div>  
+                        <div id="street-box">
+                            <input type="text" id="number" placeholder="numer domu/numer mieszkania">
+                        </div>
+                        <div id="street-box">
+                            <input type="text" id="postal-code" placeholder="kod pocztowy">
+                        </div>
+                        
+                        <div id="street-box">
+                            <input type="text" id="city" placeholder="miasto">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Produkty:</legend>
+                    <div id="products-fields"></div>
+                </fieldset>
+                <button id="addField">Dodaj</button>
+                <input type="submit" id="orderBtn" value="Wyślij zamówienie">
+            </form>
+            
+        </section>
+    
+        <footer>
+            <a href="https://www.flaticon.com/free-icons/bee" title="bee icons">Bee icons created by Freepik - Flaticon</a>
+            <p>Stronę wykonał: Kacper Beirowski (282211)</p>
+        </footer>
+    </div>
+</body>
+</html>
